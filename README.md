@@ -1,9 +1,8 @@
 ## Git and Continuous Integration
 
-<br/>
 
 
-**Steps that has been done in this submission**
+### Steps that has been done in this submission**
 
 * Made a new repository [Oblig3_Software_Engineering](https://github.com/stian96/Oblig3_Software_Engineering).
 
@@ -11,8 +10,6 @@
 
 * Implemented Github Actions so that the testfiles get executed everytime there is a commit/push to the repository.
 
-
-<br/>
 
 
 ### Steps in creating the workflow
