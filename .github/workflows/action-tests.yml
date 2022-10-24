@@ -5,6 +5,12 @@ jobs:
   Execute-Python-Tests:
     runs-on: ubuntu latest
     steps:
+        - name: Checkout and Setup
+          uses: actions/checkout@v2
+        - name: Setup python
+          uses: actions/setup-python@v2
+          with:
+            python-version: '3.9'
         - name: Install requirmenets
           run: |
             pip install requirments.txt
