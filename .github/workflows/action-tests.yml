@@ -1,18 +1,17 @@
-name: Python Tests
+name: Run Python Tests
+run-name: ${{github.actor}} is testing out Github Actions!
 on: [push]
-
 jobs:
-  build-test:
-    runs-on: ubuntu-latest
-  
+  Execute-Python-Tests:
+    runs-on: ubuntu latest
     steps:
-    - uses: actions/setup-python@v2
-      with:
-        python-version: '3.9.6'
-
-        run: |
-          pip install -r requirements.txt
-          
+        - name: Install requirmenets
           run: |
-            pytest -r w
+            pip install requirments.txt
+        - name: Run Tests
+        - run: pytest_tests/test_sample
+        - name: Lists files in Repository
+          run: |
+            ls ${{ github.workspace }}
+        - run: echo "This job status is ${{ job.status }}."
   
