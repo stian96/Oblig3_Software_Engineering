@@ -2,17 +2,17 @@ name: Python Tests
 on: [push]
 
 jobs:
-  name: "Run tests"
-  runs-on: ubuntu-latest
+  build-test:
+    runs-on: ubuntu-latest
   
-  steps:
-  - uses: actions/setup-python@v2
-    with:
-      python-version: '3.9.6'
+    steps:
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.6'
 
-    run: |
-     pip install -r requirements.txt
-  
-    run: |
-      pytest -r w
+        run: |
+          pip install -r requirements.txt
+          
+          run: |
+            pytest -r w
   
