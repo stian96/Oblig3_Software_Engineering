@@ -15,7 +15,7 @@ jobs:
           run: |
             pip install requirments.txt
         - name: Run Tests
-        - run: pytest_tests/test_sample
+        - run: pytest_tests/test_sample.py
         - name: Lists files in Repository
           run: |
             ls ${{ github.workspace }}
