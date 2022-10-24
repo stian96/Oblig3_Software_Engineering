@@ -16,6 +16,9 @@
 
 * Then a new YALM file which contains the instructions for the workflow [action-tests.yml](https://github.com/stian96/Oblig3_Software_Engineering/blob/main/.github/workflows/action-tests.yml)
 
+### Results after a new commit
+
+
 
 
 
